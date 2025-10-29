@@ -1,8 +1,9 @@
+import { FaShoppingCart} from "react-icons/fa";
 function CartWidget(){
     return(
         <div style={styles.widget}>
-            <span role="img" aria-label="carrito">🛒</span>
-            <span style={styles.counter}>0</span>
+            <FaShoppingCart color="white" size={20}/>
+            <span style={styles.counter}>3</span>
         </div>
     );
 }
@@ -17,8 +18,20 @@ const styles={
         borderRadius:"10px",
     },
     counter:{
+        position: "absolute",
+        top:"15px",
+        right: "40px",
+        backgroundColor: "red",
+        color: "white",
+        borderRadius: "50%",
+        width: "18px",
+        height: "18px",
+        display:"flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize:"12px",
         fontWeight:"bold",
-        color:"#fff",
+       
     },
 };
 
