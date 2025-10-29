@@ -5,10 +5,10 @@ function NavBar(){
         <nav style={styles.nav}>
         <div style={styles.logo}>Mi Tienda</div>
         <ul style={styles.links}>
-            <li><a href="#">Juegos</a></li>
-            <li><a href="#">Consolas</a></li>
-            <li><a href="#">Accesorios</a></li>
-            <li><a href="#">Merch</a></li>
+            <li><a href="#"  style={styles.link}>Juegos</a></li>
+            <li><a href="#"  style={styles.link}>Consolas</a></li>
+            <li><a href="#" style={styles.link}>Accesorios</a></li>
+            <li><a href="#" style={styles.link}>Merch</a></li>
         </ul>
         <CartWidget/>
         </nav>
@@ -32,7 +32,10 @@ const styles ={
         listStyle:"none",
         display:"flex",
         gap:"1.5rem",
-        
+    },
+    link:{
+        textDecoration: "none",
+        color:"white",
     },
 };
 
